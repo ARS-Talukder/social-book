@@ -2,12 +2,13 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css';
 import Home from './Components/Home/Home';
 import Login from './Components/SignUp/Login';
+import Header from './Components/Header/Header';
 
 function App() {
 
   return (
-    <div>
-      <h2 className='text-4xl font-bold'>Shadhin</h2>
+    <div className='app_container'>
+      <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='login' element={<Login></Login>}></Route>
